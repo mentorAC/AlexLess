@@ -3,9 +3,15 @@
 
 class Plant :public Organism
 {
-private:
+protected:
+	int GetRandomX(World* w);
+	int GetRandomY(World* w);
+	double probability = 8;
+	int _plantX = -1, _plantY = -1;
 public :
-		//TODO: сделать у мира функцию проверки на то свободна клетка или нет
-	//}
+	Plant();
+	Plant(int x, int y);
+	void virtual Action(World* w) override;
+		
 };
 

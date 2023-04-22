@@ -1,30 +1,34 @@
 #include "Grass.h"
+#include <ctime>
 
-int Grass::GetRandomCoord(World* w)
+
+
+//Grass::Grass() {
+//	this->initiative = 0;
+//	this->strength = 0;
+//
+//	srand(time(NULL));
+//}
+
+Grass::Grass()
 {
-	int coord
-
-	return 0;
 }
 
-Grass::Grass() {
-	this->initiative = 0;
-	this->strength = 0;
-}
+Grass::Grass(int x, int y) : Plant(x, y) {}
 
-Grass::Grass(int x, int y) : Grass()
+void Grass::Colission(Organism* w)
 {
-	this->x = x;
-	this->y = y;
 }
 
 void Grass::Action(World* w)
 {
-	w->organisms.push_back((Organism*)new Grass());
-}
+	Plant::Action(w);
+	if (_plantX != -1 && _plantY != -1) {
+		w->organisms.push_back((Organism*)new Grass(_plantX, _plantY));
+	}
 
-void Grass::Colission(Organism* w)
-{
+	_plantX = -1;
+	_plantY = -1;
 }
 
 char Grass::Draw()

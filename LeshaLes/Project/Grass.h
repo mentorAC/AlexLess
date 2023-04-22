@@ -1,9 +1,8 @@
 #pragma once
 #include "Plant.h"
-class Grass : Organism
+class Grass : public Plant
 {
 private:
-	int GetRandomCoord(World* w);
 public:
 	Grass();
 	Grass(int x, int y);

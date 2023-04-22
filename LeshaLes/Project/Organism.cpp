@@ -3,8 +3,8 @@
 Organism::Organism()
 {
     isDied = false;
-    x = 0;
-    y = 0;
+    x = -1;
+    y = -1;
 }
 
 int Organism::GetStrenght()
@@ -56,4 +56,9 @@ void Organism::SetXY(int x, int y)
 void Organism::Died()
 {
     this->isDied = true;
+}
+
+bool Organism::IsDied()
+{
+    return isDied;
 }

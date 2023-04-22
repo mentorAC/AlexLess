@@ -1,19 +1,12 @@
 #pragma once
-#include "Organism.h"
-class Kosulya :public Organism
+#include "Plant.h"
+class Kosulya :public Plant
 {
 public:
-	Kosulya()
-	{
-		this->initiative = 0;
-		this->strength = 0;
-	}
+	Kosulya(int x, int y);
 
-	void Action(World* w) override {
-		//TODO: три раза вызываем метод создания растения
-	
-	}
-	void Colission(Organism* w) override {}
-	char Draw()override { return 'K'; }
+	void Action(World* w) override;
+	void Colission(Organism* w) override;
+	char Draw()override;
 };
 

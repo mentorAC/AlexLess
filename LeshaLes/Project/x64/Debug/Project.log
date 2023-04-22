@@ -1,7 +1,20 @@
-﻿  Grass.cpp
+﻿  Animal.cpp
+  Antelope.cpp
+  Fox.cpp
+  Grass.cpp
+  Guarana.cpp
+  Hogweed.cpp
+  Kosulya.cpp
+  Organism.cpp
+  Plant.cpp
+D:\Work cpp\AlexLess\LeshaLes\Project\Plant.cpp(40,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Sheep.cpp
+  Sonchus.cpp
   Source.cpp
   Turtle.cpp
+  Wolf.cpp
+  WolfBerries.cpp
   World.cpp
+D:\Work cpp\AlexLess\LeshaLes\Project\World.cpp(87,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Generating Code...
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1096,5): error MSB6006: "link.exe" exited with code 1168.
-LINK : fatal error LNK1168: cannot open D:\Work cpp\LeshaLes\x64\Debug\Project.exe for writing
+  Project.vcxproj -> D:\Work cpp\AlexLess\LeshaLes\x64\Debug\Project.exe

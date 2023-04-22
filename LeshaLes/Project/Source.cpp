@@ -35,14 +35,22 @@ int main() {
 	//Grass* or_ = new Grass();
 
 	std::vector<Organism*> orgs{
-		(Organism*)new Grass(),
-		(Organism*)new Kosulya(),
-		(Organism*)new Wolf(),
-		(Organism*)new Sheep(),
+		//(Organism*)new Grass(7, 5),
+		//(Organism*)new Kosulya(13, 5),
+		(Organism*)new Wolf(7, 5),
+		(Organism*)new Wolf(8, 4),
+		(Organism*)new Wolf(4, 3),
+		//(Organism*)new Wolf(),
+		//(Organism*)new Sheep(),
 	};
 
 	World w(10, 20, orgs);
-	w.ExecuteTure();
-	w.DrawWorld();
+
+	while (true)
+	{
+		w.ExecuteTure();
+		w.DrawWorld();
+		getchar();
+	}
     return 0;
 }

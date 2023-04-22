@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Animal.cpp" />
     <ClCompile Include="Antelope.cpp" />
     <ClCompile Include="Fox.cpp" />
     <ClCompile Include="Grass.cpp" />
@@ -144,6 +145,7 @@
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animal.h" />
     <ClInclude Include="Antelope.h" />
     <ClInclude Include="Fox.h" />
     <ClInclude Include="Gaurana.h" />

@@ -23,4 +23,5 @@ public:
 	void SetY(int y);
 	void SetXY(int x, int y);
 	void Died();
+	bool IsDied();
 };

@@ -124,7 +124,7 @@ public:
     virtual void Foo() = 0;
 };
 
-int main() {
+int main1() {
     {
         //cout << "Hello world";
         //условие ? значение1 : значение2;
@@ -163,8 +163,8 @@ int main() {
     delete ch;
 
 
-    MyClass mc;
-    mc.Foo();
+    //MyClass mc;
+    //mc.Foo();
 
     return 0;
 }
